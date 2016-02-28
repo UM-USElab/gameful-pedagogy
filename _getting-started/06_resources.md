@@ -7,7 +7,7 @@ description: Resourses for implementing gameful course design
 keyword:
 ---
 
-##Example Syllabi
+## Example Syllabi
 <a href="/docs/LSA_ASTRO106.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Astronomy 106: Aliens</a>
 
 <a href="/docs/LSA_HON240.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Honors 240: The Games We Play</a>
@@ -17,4 +17,3 @@ keyword:
 <a href="/docs/LSA_LING370.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Linguistics 370: Language and Discrimination</a>
 
 <a href="/docs/EDU_EDUC222.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Education 222: Videogames and Learning</a>
-

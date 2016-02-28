@@ -6,6 +6,6 @@ slug: gradecraft
 description: Get started with GradeCraft to support your gameful course
 keyword:
 ---
-##ONBOARDING how to
+## ONBOARDING how to
 
-##Leaderboards: How GradeCraft leaderboards work (pseudonyms + section based)
+## Leaderboards: How GradeCraft leaderboards work (pseudonyms + section based)

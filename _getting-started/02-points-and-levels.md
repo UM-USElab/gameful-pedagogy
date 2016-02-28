@@ -6,13 +6,12 @@ slug: points-and-levels
 description: More details about how to create point scales and leveling schemes
 keyword:
 ---
-##Point scale
+## Point scale
 
-##Level naming
+## Level naming
 
-##Equal level values vs. increasingly difficult
+## Equal level values vs. increasingly difficult
 
-##Easy early win
+## Easy early win
 
-##Continuous progress
-
+## Continuous progress
