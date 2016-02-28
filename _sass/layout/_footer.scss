@@ -1,0 +1,77 @@
+.footer {
+  background-color: rgba(51, 51, 51, .9);
+  z-index: 99;
+
+  @include breakpoint($mq_small) {
+    text-align: center;
+  }
+
+  p {
+    color: #666;
+    font-size: .75em;
+    @include breakpoint($mq_small) {
+      font-size: .6em;
+    }
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+  }
+
+  li:not(:last-child) {
+    padding-right: 1em;
+    }
+  }
+
+.footer-col {
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  @include breakpoint($mq_small) {
+    padding: 0;
+  }
+}
+
+.footer-col2 {
+  img {
+  width: 30px;
+  }
+
+  @include breakpoint($mq_small) {
+    order: -1;
+    }
+}
+
+.footer-links {
+  @include breakpoint($mq_small) {
+    margin-bottom: 0;
+}
+  a {
+    color: #9b9b9b;
+    text-transform: uppercase;
+
+  span {
+    font-size: 1.25em;
+  }
+
+    &:hover {
+      color: $color-blue-4;
+    }
+  }
+}
+
+.footer .wrapper-1200 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include breakpoint($mq_small) {
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    }
+}

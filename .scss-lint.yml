@@ -1,0 +1,5 @@
+linters:
+  Comment:
+    enabled: false
+  VendorPrefix:
+    enabled: false

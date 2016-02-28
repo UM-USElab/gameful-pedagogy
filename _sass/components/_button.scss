@@ -1,0 +1,32 @@
+.button {
+  background-color: transparent;
+  font-weight: 200;
+  font-size: 0.9em;
+  border-radius: 5px;
+  padding: 0.25em 0.65em;
+  display: inline-block;
+}
+
+.white-button {
+  color: #FFF;
+  border: 1px solid #FFF;
+
+  &:hover {
+    background-color: transparentize(#FFF, 0.8);
+  }
+
+  @include breakpoint($mq_small) {
+    font-size: .9em;
+  }
+}
+
+.blue-button {
+  color: $color-blue-3;
+  border: 1px solid $color-blue-3;
+  margin-top: 2em;
+
+  &:hover {
+      background-color: transparentize($color-blue-3, 0.8);
+    }
+
+}

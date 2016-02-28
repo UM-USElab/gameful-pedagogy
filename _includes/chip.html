@@ -1,0 +1,11 @@
+{% assign words = page.keyword | split: ',' %}
+
+{% for word in words %}
+<div class="chip">
+  {{ word }}
+  <i class="fa fa-tag"></i>
+</div>
+{% endfor %}
+
+
+

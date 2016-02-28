@@ -1,0 +1,32 @@
+{% if page.url != "/" %}
+  {% assign url_parts = page.url | replace: "/", " " | split: " " %}
+  {% assign url_parts_size = url_parts | size %}
+
+  <ol class="breadcrumbs">
+    <li><a href="/">Home</a></li>
+    {% if url_parts_size > 0 %}
+      {% capture category_url %}/{{ url_parts[0] }}/{% endcapture %}
+
+      {% for section in site['sections'] %}
+        {% if section.url == category_url %}
+          {% if url_parts_size > 1 %}
+            <li><a href="{{ section.url }}">{{ section.title }}</a></li>
+          {% else %}
+            <li>{{ section.title }}</li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% if url_parts_size > 1 %}
+      {% for collection in site.collections %}
+        {% if collection.label == url_parts[0] %}
+          {% for doc in collection.docs %}
+            {% if doc.url == page.url %}
+              <li>{{ doc.title | truncatewords: 8 }}</li>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </ol>
+{% endif %}

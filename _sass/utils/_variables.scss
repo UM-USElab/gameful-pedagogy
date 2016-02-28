@@ -1,0 +1,23 @@
+$gray: #ccc;
+$white: #fff;
+$text-grey: #4A4A4A;
+$new-blue-grey: #e7ebf0;
+$color-grey-0: #333;
+$color-grey-2: #666;
+$color-blue-00: #001530;
+$color-blue-0: #0a4a81;
+$color-blue-4: #8bdeff;
+$color-orange-3: #feb130;
+
+
+/* Media Queries */
+
+$extrasmall_max: 39rem; // 39 * 16 = 624px
+$small_max: 48rem; // 48 * 16 = 768px
+$medium_max: 60rem; // 960px
+$large_max: 75rem; // 1200px
+
+$mq_extrasmall: max-width $extrasmall_max; // @media (max-width: 39rem)
+$mq_small: max-width $small_max; // @media (max-width: 48rem)
+$mq_medium: max-width $medium_max; // @media (max-width: 60rem)
+$mq_large: max-width $large_max; // @media (max-width: 75rem)

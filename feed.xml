@@ -1,0 +1,71 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>{{ site.name | xml_escape }}</title>
+    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
+    <link>{{ site.url }}</link>
+    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+    {% for topic in site.getting-started %}
+      <item>
+        <title>{{ topic.title | xml_escape }}</title>
+        {% if topic.author.name %}
+          <dc:creator>{{ topic.author.name | xml_escape }}</dc:creator>
+        {% endif %}
+        {% if topic.excerpt %}
+          <description>{{ topic.excerpt | xml_escape }}</description>
+        {% else %}
+          <description>{{ topic.content | xml_escape }}</description>
+        {% endif %}
+        <category>Getting Started</category>
+        {% if topic.keywords %}
+          <keywords>{{ topic.keywords | xml_escape }}</keywords>
+        {% endif %}
+        <pubDate>{{ topic.date | date_to_rfc822 }}</pubDate>
+        <link>{{ site.url }}{{ topic.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ topic.url }}</guid>
+      </item>
+    {% endfor %}
+    {% for faq in site.faqs %}
+      <item>
+        <title>{{ faq.title | xml_escape }}</title>
+        {% if faq.author.name %}
+          <dc:creator>{{ faq.author.name | xml_escape }}</dc:creator>
+        {% endif %}
+        {% if faq.excerpt %}
+          <description>{{ faq.excerpt | xml_escape }}</description>
+        {% else %}
+          <description>{{ faq.content | xml_escape }}</description>
+        {% endif %}
+        <category>FAQs</category>
+        {% if faq.keywords %}
+          <keywords>{{ faq.keywords | xml_escape }}</keywords>
+        {% endif %}
+        <pubDate>{{ faq.date | date_to_rfc822 }}</pubDate>
+        <link>{{ site.url }}{{ faq.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ faq.url }}</guid>
+      </item>
+    {% endfor %}
+    {% for section in site.sections %}
+      <item>
+        <title>{{ section.title | xml_escape }}</title>
+        {% if section.author.name %}
+          <dc:creator>{{ section.author.name | xml_escape }}</dc:creator>
+        {% endif %}
+        {% if section.excerpt %}
+          <description>{{ section.excerpt | xml_escape }}</description>
+        {% else %}
+          <description>{{ section.content | xml_escape }}</description>
+        {% endif %}
+        <category>{{ section.title }}</category>
+        {% if section.keywords %}
+          <keywords>{{ section.keywords | xml_escape }}</keywords>
+        {% endif %}
+        <pubDate>{{ section.date | date_to_rfc822 }}</pubDate>
+        <link>{{ site.url }}{{ section.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ section.url }}</guid>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

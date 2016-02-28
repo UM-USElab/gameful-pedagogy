@@ -1,0 +1,94 @@
+.sidebar-wrapper {
+  margin: 0;
+  padding-left: 320px;
+
+  @include breakpoint($mq_small) {
+    padding: .75em;
+  }
+
+  aside {
+    background-color: $color-blue-3;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 300px;
+
+    @include breakpoint($mq_small) {
+      background-color: initial;
+      height: auto;
+      position: static;
+      width: 100%;
+    }
+  }
+
+  h1 {
+    @include breakpoint($mq_small) {
+      display: none;
+    }
+  }
+}
+
+.side-nav {
+  padding: 6.5em 2em;
+
+  @include breakpoint($mq_small) {
+    padding: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  a {
+    color: $white;
+    line-height: 2.5em;
+  }
+}
+
+.side-nav-menu {
+  @include breakpoint($mq_small) {
+    display: none;
+  }
+}
+
+.selected a {
+  font-weight: bold;
+
+  &::after {
+    content: '\f105';
+    font-family: FontAwesome;
+    margin-left: .75em;
+    margin-right: .75em;
+  }
+}
+
+.select-wrapper {
+  display: none;
+  margin: 1em 0 .25em;
+
+  @include breakpoint($mq_small) {
+    display: block;
+  }
+
+  span.caret {
+    top: 18px;
+  }
+
+  input.select-dropdown {
+    font-size: 1.5rem;
+  }
+
+  .dropdown-content li {
+    & > a,
+    & > span {
+      color: $text-grey;
+    }
+
+    img {
+      border-radius: 50%;
+      float: left;
+    }
+  }
+}

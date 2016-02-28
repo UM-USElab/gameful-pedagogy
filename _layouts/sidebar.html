@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+  <aside>
+    {% include side-nav.html section=page.collection %}
+  </aside>
+  <section>
+    {{ content | markdownify }}
+
+    <div>{% include chip.html %}</div>
+    <a href="{% if page.next %}{{ page.next.url }}{% else %}/getting-started/assignment-design{% endif %}" class="button blue-button">Next <span class="fa fa-long-arrow-right"></span></a>
+
+  </section>
+

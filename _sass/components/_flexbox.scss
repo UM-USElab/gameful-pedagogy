@@ -1,0 +1,30 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col-25 {
+  flex: 1 25%;
+
+  @include breakpoint($mq_small) {
+    flex: 1 100%;
+  }
+}
+
+.flex-col-50 {
+  flex: 1 50%;
+
+  @include breakpoint($mq_small) {
+    flex: 1 100%;
+  }
+}
+
+.flex-col-75 {
+  flex: 1 75%;
+}

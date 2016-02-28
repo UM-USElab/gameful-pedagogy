@@ -1,0 +1,106 @@
+/* super-search
+Author: Kushagra Gour (http://kushagragour.in)
+MIT Licensed
+*/
+.super-search-btn {
+	position: fixed;
+	right: 10px;
+	top: 15px;
+	fill: #DDD;
+}
+.super-search-btn:hover {
+	fill: #BBB;
+}
+
+.super-search {
+	background-color: rgba(0, 0, 0, 0.85);
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	overflow-y: auto;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	top: 0;
+	transition: 0.2s ease;
+	visibility: hidden;
+	z-index: 101;
+}
+.super-search__close-btn {
+	color: $gray;
+	display: block;
+	font-size: 1.5em;
+	position: absolute;
+	right: 3.5em;
+	top: 0.75em;
+	z-index: 1;
+
+	&::before {
+		display: block;
+		font-size: 2rem;
+	}
+}
+
+.super-search__input {
+	background: none;
+	border-left: none;
+	border-right: none;
+	border: 0;
+	color: #fff;
+	font-size: 2em;
+	outline: none;
+	padding: 0.75em 2em;
+	text-align: center;
+	transform: translateY(-100%);
+	transition: 0.15s ease-out 150ms;
+	width: 33%;
+}
+.is-active .super-search__input {
+	border-bottom: 2px solid #fff;
+	transform: translateY(0vh);
+}
+.super-search__results {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 960px;
+	overflow: visible;
+	padding: 1em;
+	text-align: left;
+	transform: translateY(1vh);
+	transition: 0.2s ease;
+	width: 100%;
+}
+.super-search__results.is-hidden {
+	opacity: 0;
+	transform: translateY(-1vh);
+}
+
+.super-search__results > li {
+	padding: 0.5em;
+	width: 25%;
+}
+
+.super-search__results > li > a {
+	background-color: #eee;
+	color: #4A4A4A;
+	display: block;
+	font-size: 0.9em;
+	height: 200px;
+	padding: 1em;
+	overflow-y: hidden;
+
+	&:hover {
+		background-color: #FFF;
+		cursor: pointer;
+	}
+}
+
+.super-search__result-date {
+	color: #BBB;
+	position: absolute;
+	right: 12px;
+}
+.super-search.is-active {
+	opacity: 1;
+	visibility: visible;
+}

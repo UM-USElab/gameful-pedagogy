@@ -1,0 +1,24 @@
+# Site settings
+title: Gameful Pedagogy
+email: help@gradecraft.com
+description: "A website of resources to help instructors get started with gameful curriculum."
+url: "http://localhost:4000"
+twitter_username: gradecraft
+github_username:  UM-USElab/GradeCraft
+collections:
+  sections:
+    output: true
+    permalink: /:title/
+  faqs:
+    output: true
+    permalink: /faqs/:title/
+  getting-started:
+    output: true
+    permalink: /getting-started/:title/
+
+sass:
+  style: expanded
+
+# Build settings
+markdown: kramdown
+permalink: pretty

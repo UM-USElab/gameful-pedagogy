@@ -1,0 +1,132 @@
+$txt-color-inverse: #fff;
+
+$color-blue-1: #00162f;
+$color-blue-2: #002d62;
+$color-blue-3: #2e70be;
+$color-blue-4: #8bdeff;
+$color-blue-5: #e7f8ff;
+$blues: ("1": #00162f, 2: #002d62, 3: #2e70be, 4: #8bdeff, 5: #e7f8ff);
+
+$color-alt-blue-1: #1e267f;
+$color-alt-blue-2: #1460ae;
+$color-alt-blue-3: #6fa9dd;
+$color-alt-blue-4: #55c3f5;
+$alt-blues: (1: #1e267f, 2: #1460ae, 3: #6fa9dd, 4: #55c3f5);
+
+$color-purple-1: #490454;
+$color-purple-2: #8f27a1;
+$purples: (1: #490454, 2: #8f27a1);
+
+$color-green-1: #219800;
+$color-green-2: #7cc02f;
+$greens: (1: #219800, 2: #7cc02f);
+
+$color-alt-green-1: #1c7200;
+$color-alt-green-2: #68a127;
+$alt-greens: (1: #1c7200, 2: #219800);
+
+$color-red-1: #c00;
+$reds: (1: #c00);
+
+$color-orange-1: #f7941e;
+$oranges: (1: #f7941e);
+
+$color-yellow-1: #ffcf06;
+$yellows: (1: #ffcf06);
+
+$color-grey-1: #000;
+$color-grey-2: #333;
+$color-grey-3: #444;
+$color-grey-4: #666;
+$color-grey-5: #ccc;
+$color-grey-6: #eee;
+$color-grey-7: #fff;
+$color-grey-8: #999;
+$greys: (1: #000, 2: #333, 3: #444, 4: #666, 5: #ccc, 6: #eee, 7: #fff, 8: #999);
+
+// COLOR AID CLASSES:
+
+@each $number, $hex-code in $blues {
+  .color-blue-#{$number} {
+    background-color: $hex-code;
+  }
+}
+
+@each $number, $hex-code in $purples {
+  .color-purple-#{$number} {
+    background-color: $hex-code;
+  }
+}
+
+@each $number, $hex-code in $alt-blues {
+  .color-alt-blue-#{$number} {
+    background-color: $hex-code;
+  }
+}
+
+@each $number, $hex-code in $greens {
+  .color-green-#{$number} {
+    background-color: $hex-code;
+  }
+}
+
+@each $number, $hex-code in $alt-greens {
+  .color-alt-green-#{$number} {
+    background-color: $hex-code;
+  }
+}
+
+@each $number, $hex-code in $reds {
+  .color-red-#{$number} {
+    background-color: $hex-code;
+  }
+}
+
+@each $number, $hex-code in $oranges {
+  .color-orange-#{$number} {
+    background-color: $hex-code;
+  }
+}
+
+@each $number, $hex-code in $yellows {
+  .color-yellow-#{$number} {
+    background-color: $hex-code;
+  }
+}
+
+@each $number, $hex-code in $greys {
+  .color-grey-#{$number} {
+    background-color: $hex-code;
+  }
+}
+
+// ALIASES:
+
+$color-black: $color-grey-1; // alias
+$color-white: $color-grey-7; // alias
+
+// LAYOUT ALAISES
+$txt-color-inverse: $color-white;
+$alert-color: $color-orange-1;
+
+@mixin four-color-horizontal-gradient($color1, $color2, $color3, $color4) {
+  background-color: $color1; //* Fallback Color */
+  background-image: -webkit-gradient(linear, left, right, from($color1), to($color4)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(to right, $color1, $color2, $color3, $color4); // Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(to right, $color1, $color2, $color3, $color4); /* FF3.6 */
+  background-image: -ms-linear-gradient(to right, $color1, $color2, $color3, $color4); /* IE10 */
+  background-image: -o-linear-gradient(to right, $color1, $color2, $color3, $color4); /* Opera 11.10+ */
+  background-image: linear-gradient(to right, $color1, $color2, $color3, $color4);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$color1}', EndColorStr='#{$color4}');
+}
+
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; //* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); // Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+  background-image: -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image: linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}

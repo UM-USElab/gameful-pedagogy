@@ -1,0 +1,16 @@
+.gs-menu {
+  display: none;
+  @include breakpoint($mq_small) {
+    display: block;
+  }
+}
+
+.gs-menu ul {
+  display: none;
+}
+
+select {
+  width: 100%;
+  height: 40px;
+  border: 0px;
+}

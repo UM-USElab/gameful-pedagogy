@@ -1,0 +1,36 @@
+---
+layout: default
+title: "Frequently Asked Questions"
+---
+
+{% assign faq_categories = site.faqs | group_by: "category" %}
+
+<section class="flex-row">
+  <section class="flex-col-50">
+    {% for faq_category in faq_categories %}
+      {% if site.data.faqs.categories.col_1 contains faq_category.name %}
+        {% assign faq_items = faq_category.items %}
+
+        <h2>{{ faq_category.name }}</h2>
+
+        {% for faq_item in faq_items %}
+          <a href="{{ faq_item.url }}">{{ faq_item.title }}</a>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </section>
+
+  <section class="flex-col-50">
+    {% for faq_category in faq_categories %}
+      {% if site.data.faqs.categories.col_2 contains faq_category.name %}
+        {% assign faq_items = faq_category.items %}
+
+        <h2>{{ faq_category.name }}</h2>
+
+        {% for faq_item in faq_items %}
+          <a href="{{ faq_item.url }}">{{ faq_item.title }}</a>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </section>
+</section>

@@ -1,0 +1,511 @@
+@import 'color';
+@import 'layout';
+
+$background-height: 100px;
+
+$default-mountain-size: $background-height;
+$default-mountain-peak-size: $background-height * .35;
+$default-mountain-spacer-size: $default-mountain-size - $default-mountain-peak-size;
+
+$hill-lift-spacer: 40px;
+
+$cloud-speed-1: 180s;
+$cloud-speed-2: 200s;
+$cloud-speed-3: 220s;
+$cloud-speed-4: 260s;
+$cloud-speed-5: 360s;
+
+// z-index for layers
+
+$layer-ground: -50;
+$layer-foreground-hill: -50;
+$layer-middleground-hill: -60;
+$layer-background-hill: -70;
+$layer-mountains: -100;
+$layer-clouds: -500;
+$layer-back-color: -1000;
+
+// Main Content Containers
+//-------------------------
+
+// scroll past the footer to reveal the entire background scene
+.row.panel.footer {
+  margin-bottom: $background-height + 200px;
+}
+
+.back-color-wash {
+  background-color: $color-alt-blue-4;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: $layer-back-color;
+}
+
+// keep the sky pinned to the top
+.back-sky-container {
+  height: $background-height;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: $layer-clouds;
+}
+
+// keep the background pinned to the bottom
+.background-container {
+  bottom: 0;
+  height: $background-height;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: $layer-ground;
+
+  .background-left-wrapper {
+    float: left;
+    height: $background-height;
+    width: 50%;
+  }
+
+  .background-right-wrapper {
+    height: $background-height;
+    margin-left: 50%;
+  }
+}
+
+// Clouds:
+//-------------------------
+
+.cloud {
+  height: 100px;
+  position: relative;
+  width: 400px;
+  // -webkit-animation: scroll $cloud-speed-4 linear 1 /* Safari 4+
+  // -moz-animation:    scroll $cloud-speed-4 linear 1 /* Fx 5+
+  // -o-animation:      scroll $cloud-speed-4 linear 1 /* Opera 12+
+  // animation:         scroll $cloud-speed-4 linear 1 /* IE 10+, Fx 29+
+}
+
+.cloud-2 {
+  margin-left: 10%;
+  // -webkit-animation-delay: 30s
+  // -webkit-animation-duration: $cloud-speed-2
+  // animation-delay: 30s
+  // animation-duration: $cloud-speed-2
+}
+
+.cloud-3 {
+  margin-left: 25%;
+  // -webkit-animation-delay: 90s
+  // -webkit-animation-duration: $cloud-speed-3
+  // animation-delay: 90s
+  // animation-duration: $cloud-speed-3
+}
+
+.cloud-4 {
+  // margin-left: 50%;
+  // -webkit-animation-delay: 60s
+  // -webkit-animation-duration: $cloud-speed-5
+  // animation-delay: 60s
+  // animation-duration: $cloud-speed-5
+  margin-left: 75%;
+    // -webkit-animation-delay: 15s
+    // -webkit-animation-duration: $cloud-speed-1
+    // animation-delay: 15s
+    // animation-duration: $cloud-speed-1
+}
+
+.cloud-bubble {
+  background-color: $white;
+  opacity: .3;
+  position: absolute;
+}
+
+@mixin cloud-bubble-mixin($size, $left, $top) {
+  $main-size: $size * 1px;
+  $radius-size: $main-size / 2;
+  left: $left * 1px;
+  top: $top * 1px;
+  width: $main-size;
+  height: $main-size;
+  @include rounded-corners($radius-size);
+}
+
+// small bubbles in the corners
+.cloud-bubble-1 {
+  @include cloud-bubble-mixin(100, 0, 10);
+}
+
+.cloud-bubble-2 {
+  @include cloud-bubble-mixin(100, 300, 30);
+}
+
+.cloud-bubble-3 {
+  @include cloud-bubble-mixin(100, 10, 90);
+}
+
+.cloud-bubble-4 {
+  @include cloud-bubble-mixin(90, 250, 120);
+}
+
+// medium bubbles in middle ring
+.cloud-bubble-5 {
+  @include cloud-bubble-mixin(150, 20, 30);
+}
+
+.cloud-bubble-6 {
+  @include cloud-bubble-mixin(125, 200, 30);
+}
+
+.cloud-bubble-7 {
+  @include cloud-bubble-mixin(150, 50, 90);
+}
+
+.cloud-bubble-8 {
+  @include cloud-bubble-mixin(130, 200, 80);
+}
+
+// large bubbles towards center
+.cloud-bubble-9 {
+  @include cloud-bubble-mixin(200, 60, 10);
+}
+
+.cloud-bubble-10 {
+  @include cloud-bubble-mixin(200, 120, -10);
+}
+
+.cloud-bubble-11 {
+  @include cloud-bubble-mixin(200, 20, 20);
+}
+
+.cloud-bubble-12 {
+  @include cloud-bubble-mixin(200, 160, 50);
+}
+
+// Hills:
+//-------------------------
+
+.hill {
+  border-radius: 50% 50% 0 0;
+}
+
+.hill-1 {
+  height: 200px;
+  margin-top: 50px;
+  width: 75%;
+}
+
+.hill-2 {
+  height: 200px;
+  margin-top: 20px;
+  width: 60%;
+}
+
+.hill-3 {
+  height: 200px;
+  margin-top: 30px;
+  width: 50%;
+}
+
+.hill-position-1 {
+  background-color: $color-green-2;
+  left: -200px;
+  position: absolute;
+  top: -13px;
+  z-index: $layer-foreground-hill;
+}
+
+.hill-position-2 {
+  background-color: $color-alt-green-2;
+  left: 200px;
+  position: absolute;
+  z-index: $layer-middleground-hill;
+}
+
+.hill-position-3 {
+  background-color: $color-alt-green-1;
+  position: absolute;
+  right: -300px;
+  top: -10px;
+  z-index: $layer-background-hill;
+}
+
+// Mountains:
+//-------------------------
+
+.mountain {
+  // don't break apart:
+  margin-top: -20px;
+  position: absolute;
+  width: 100%;
+  z-index: $layer-mountains;
+}
+
+.mountain-2 {
+  margin-left: 10%;
+}
+
+.mountain-3 {
+  margin-left: 30%;
+}
+
+.mountain-4 {
+  margin-left: 5%;
+}
+
+.mountain-5 {
+  margin-left: 15%;
+}
+
+.mountain-6 {
+  margin-left: 30%;
+}
+
+.mountain-left-side {
+  border-bottom: $default-mountain-size solid $color-alt-blue-2;
+  border-left: $default-mountain-size solid transparent;
+  float: left;
+  height: 0;
+  width: 0;
+}
+
+.mountain-right-side {
+  border-bottom: $default-mountain-size solid $color-alt-blue-1;
+  border-right: $default-mountain-size solid transparent;
+  float: left;
+  height: 0;
+  width: 0;
+}
+
+.mountain-peak {
+  position: absolute;
+}
+
+.mountain-peak-left-spacer {
+  background-color: transparent;
+  float: left;
+  height: $default-mountain-spacer-size;
+  width: $default-mountain-spacer-size;
+}
+
+.mountain-peak-right-spacer {
+  background-color: transparent;
+  float: left;
+  height: $default-mountain-size;
+  width: $default-mountain-size;
+}
+
+.mountain-peak-left-side {
+  border-bottom: $default-mountain-peak-size solid transparent;
+  border-right: $default-mountain-peak-size solid $color-alt-blue-3;
+  border-top: $default-mountain-peak-size solid transparent;
+  float: left;
+  height: 0;
+  width: 0;
+}
+
+.mountain-peak-right-side {
+  border-bottom: $default-mountain-peak-size solid transparent;
+  border-left: $default-mountain-peak-size solid $color-alt-blue-2;
+  border-top: $default-mountain-peak-size solid transparent;
+  float: left;
+  height: 0;
+  width: 0;
+}
+
+.mountain-root {
+  background-color: $color-alt-blue-2;
+  height: $default-mountain-size;
+  position: absolute;
+  top: $default-mountain-size;
+  width: $default-mountain-size;
+
+  &.right {
+    background-color: $color-alt-blue-1;
+    left: $default-mountain-size;
+  }
+}
+
+@mixin mountain-size-mixin($size) {
+  $main-size: $size * $default-mountain-size;
+  $peak-size: $size * 35px;
+  $spacer-size: $main-size - $peak-size;
+  margin-top: $default-mountain-size - $main-size - $hill-lift-spacer;
+
+  .mountain-left-side {
+    border-bottom-width: $main-size;
+    border-left-width: $main-size;
+  }
+
+  .mountain-right-side {
+    border-bottom-width: $main-size;
+    border-right-width: $main-size;
+  }
+
+  .mountain-peak-left-spacer {
+    height: $spacer-size;
+    width: $spacer-size;
+  }
+
+  .mountain-peak-right-spacer {
+    height: $main-size;
+    width: $main-size;
+  }
+
+  .mountain-peak-left-side {
+    border-bottom-width: $peak-size;
+    border-right-width: $peak-size;
+    border-top-width: $peak-size;
+  }
+
+  .mountain-peak-right-side {
+    border-bottom-width: $peak-size;
+    border-left-width: $peak-size;
+    border-top-width: $peak-size;
+  }
+
+  .mountain-root {
+    height: $main-size;
+    top: $main-size;
+    width: $main-size;
+  }
+
+  .mountain-root.right {
+    left: $main-size;
+  }
+}
+
+.mountain-size-1 {
+  @include mountain-size-mixin(1.2);
+}
+
+.mountain-size-2 {
+  @include mountain-size-mixin(1.5);
+}
+
+.mountain-size-3 {
+  @include mountain-size-mixin(1.8);
+}
+
+.mountain-size-4 {
+  @include mountain-size-mixin(2);
+}
+
+.mountain-size-5 {
+  @include mountain-size-mixin(2.2);
+}
+
+// Responsive Changes
+//-------------------------
+
+@media (max-width: $media-medium-max) {
+  .mountain-2 {
+    visibility: hidden;
+  }
+
+  .mountain-5 {
+    visibility: hidden;
+  }
+
+  .hill-1 {
+    width: 100%;
+  }
+
+  .hill-2 {
+    width: 130%;
+  }
+
+  .hill-3 {
+    width: 120%;
+  }
+}
+
+// Animations
+//-------------------------
+
+//   - Scroll
+@-webkit-keyframes scroll {
+  from {
+    margin-left: -25%;
+  }
+
+  to {
+    margin-left: 100%;
+  }
+}
+
+
+@keyframes scroll {
+  from {
+    margin-left: -25%;
+  }
+
+  to {
+    margin-left: 100%;
+  }
+}
+
+
+//   - Popup
+.popup {
+  -webkit-animation-name: popup;
+  animation-name: popup;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(100%);
+  }
+
+  50% {
+    transform: translateY(-8%);
+  }
+
+  65% {
+    transform: translateY(4%);
+  }
+
+  80% {
+    transform: translateY(-4%);
+  }
+
+  95% {
+    transform: translateY(2%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+
+@-webkit-keyframes popup {
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+
+  50% {
+    -webkit-transform: translateY(-8%);
+  }
+
+  65% {
+    -webkit-transform: translateY(4%);
+  }
+
+  80% {
+    -webkit-transform: translateY(-4%);
+  }
+
+  95% {
+    -webkit-transform: translateY(2%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}

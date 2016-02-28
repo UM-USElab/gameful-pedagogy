@@ -1,0 +1,48 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  text-align: center;
+  width: 33%;
+
+  @include breakpoint($mq_small) {
+    width: 50%;
+  }
+
+  @include breakpoint($mq_extrasmall) {
+    width: 100%;
+  }
+
+  p {
+    font-size: 0.8em;
+    font-weight: 200;
+    margin: 0px;
+    color: $text-grey;
+  }
+
+  span {
+    color: #FFF;
+    font-size: 1.25em;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    padding: 1em 0;
+    width: 100px;
+  }
+}
+
+.tile-top {
+  background-color: $color-blue-0;
+  border: 1px solid $color-blue-0;
+  color: #FFFFFF;
+  padding: 0.5em;
+}
+
+.tile-bottom {
+  background-color: transparentize($new-blue-grey, .4);
+  border-bottom: 0px;
+  flex: 1;
+  padding: 1em 2.5em;
+}

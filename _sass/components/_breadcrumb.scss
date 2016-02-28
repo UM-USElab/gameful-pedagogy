@@ -1,0 +1,45 @@
+.breadcrumbs {
+  font-size: .75rem;
+  list-style: none;
+  padding-left: 0;
+  @include breakpoint($mq_small) {
+    font-size: 0.9em;
+  }
+
+  li {
+    display: inline-block;
+    text-transform: uppercase;
+
+    &:not(:nth-last-child(2)) {
+      @include breakpoint($mq_small) {
+        display: none;
+      }
+    }
+
+    &:not(:last-of-type)::after {
+      content: "/";
+      margin-left: .75em;
+      margin-right: .75em;
+      @include breakpoint($mq_small) {
+        display: none;
+      }
+    }
+
+    &:not(:last-of-type)::before {
+      content: '<';
+      display: none;
+      margin-right: .75em;
+      @include breakpoint($mq_small) {
+        display: inline;
+      }
+    }
+
+    a {
+      color: $color-grey-2;
+      display: inline;
+      &:hover {
+        color: transparentize($color-grey-2, .5);
+      }
+    }
+  }
+}

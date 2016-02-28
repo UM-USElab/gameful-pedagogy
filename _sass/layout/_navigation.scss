@@ -1,0 +1,28 @@
+.main-nav {
+  display: flex;
+
+  ul {
+    padding: 0;
+    margin-top: .7em;
+    margin-bottom: .7em;
+
+    @include breakpoint($mq_small) {
+      margin-bottom: .25em;
+      margin-top: .5em;
+    }
+  }
+
+  li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  a {
+    color: $color-blue-4;
+    font-size: .9em;
+
+    &:hover {
+      color: $new-blue-grey;
+    }
+  }
+}

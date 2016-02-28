@@ -1,0 +1,10 @@
+.content {
+  background-color: $white;
+  flex: 1;
+  padding-bottom: 3em;
+  padding-top: 60px;
+
+  @include breakpoint($mq_small) {
+    padding-top: 75px;
+  }
+}

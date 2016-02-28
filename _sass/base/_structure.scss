@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 60rem;
+  width: 100%;
+
+  @include breakpoint($mq_medium) {
+    padding: .75em;
+  }
+}
+
+.wrapper-1200 {
+  margin: 0 auto;
+  max-width: 75em;
+
+  @include breakpoint($mq_large) {
+    padding: .75em;
+  }
+}
+
+.wrapper-full {
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.noscroll {
+  overflow: hidden;
+}
