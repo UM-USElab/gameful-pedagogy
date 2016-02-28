@@ -1,21 +1,20 @@
 .main-header {
   background-color: $color-blue-00;
   color: $color-blue-4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
 
-  & .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-
-    @include breakpoint($mq_small) {
-      align-items: center;
-      flex-direction: column;
-      padding: 0;
-    }
+  @include breakpoint($mq_small) {
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
   }
 }
