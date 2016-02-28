@@ -17,28 +17,16 @@ body {
 .wrapper {
   margin: 0 auto;
   max-width: 60rem;
+  padding-bottom: 3em;
   width: 100%;
 
   @include breakpoint($mq_medium) {
-    padding: .75em;
+    padding-left: .75em;
+    padding-right: .75em;
+
   }
 }
 
-.wrapper-1200 {
-  margin: 0 auto;
-  max-width: 75em;
-
-  @include breakpoint($mq_large) {
-    padding: .75em;
-  }
-}
-
-.wrapper-full {
-  margin: 0 auto;
-  max-width: 100%;
-  padding-left: 1em;
-  padding-right: 1em;
-}
 
 .noscroll {
   overflow: hidden;

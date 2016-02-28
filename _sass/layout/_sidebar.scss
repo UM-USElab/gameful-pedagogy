@@ -1,24 +1,34 @@
 .sidebar-wrapper {
+  display: flex;
   margin: 0;
-  padding-left: 320px;
+  max-width: none;
+  padding-bottom: 0;
+
+  @include breakpoint($mq_medium) {
+    padding: 0;
+  }
 
   @include breakpoint($mq_small) {
-    padding: .75em;
+    display: block;
+    padding-left: .75em;
+    padding-right: .75em;
   }
 
   aside {
     background-color: $color-blue-3;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 300px;
+    min-width: 250px;
 
     @include breakpoint($mq_small) {
       background-color: initial;
-      height: auto;
-      position: static;
       width: 100%;
+    }
+
+    .breadcrumbs {
+      display: none;
+
+      @include breakpoint($mq_small) {
+        display: block;
+      }
     }
   }
 
@@ -30,7 +40,8 @@
 }
 
 .side-nav {
-  padding: 6.5em 2em;
+  padding-top: 2.5em;
+  padding-left: 1.5em;
 
   @include breakpoint($mq_small) {
     padding: 0;
@@ -89,6 +100,23 @@
     img {
       border-radius: 50%;
       float: left;
+    }
+  }
+}
+
+.sidebar-right {
+  max-width: 960px;
+  padding-bottom: 3em;
+  padding-left: 1.5em;
+
+  @include breakpoint($mq_small) {
+    max-width: none;
+    padding-left: 0;
+  }
+
+  .breadcrumbs {
+    @include breakpoint($mq_small) {
+      display: none;
     }
   }
 }

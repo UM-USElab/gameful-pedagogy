@@ -1,8 +1,16 @@
 .footer {
   background-color: rgba(51, 51, 51, .9);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
   z-index: 99;
 
   @include breakpoint($mq_small) {
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
     text-align: center;
   }
 
@@ -62,16 +70,4 @@
       color: $color-blue-4;
     }
   }
-}
-
-.footer .wrapper-1200 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  @include breakpoint($mq_small) {
-    align-items: center;
-    flex-direction: column;
-    padding: 0;
-    }
 }
