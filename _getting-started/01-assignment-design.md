@@ -7,7 +7,7 @@ description: Design assignments using the gameful core values
 keyword: grading, assignments, choice
 ---
 
-##Different types of choices
+## Different types of choices
 
 ###Choice of which assignments to do
 Encourage students to show that they have learned material through a variety of mediums by allowing them to choose assignments that appeal to their unique interests and goals.
