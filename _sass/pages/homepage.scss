@@ -29,8 +29,14 @@
 
 .panel {
   color: $white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin: .25em;
   overflow: hidden;
   position: relative;
@@ -48,7 +54,8 @@
     bottom: 0;
     left: 50%;
     position: absolute;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 
     @include breakpoint($mq_small) {
       height: auto;
@@ -68,13 +75,16 @@
 
   img {
     left: 60%;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
     width: 175px;
   }
 }
 
 .panel-text {
-  align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
   padding: 0 4em;
   text-align: center;
   width: 100%;

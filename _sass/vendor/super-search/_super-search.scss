@@ -22,6 +22,7 @@ MIT Licensed
 	right: 0;
 	text-align: center;
 	top: 0;
+	-webkit-transition: 0.2s ease;
 	transition: 0.2s ease;
 	visibility: hidden;
 	z-index: 101;
@@ -51,13 +52,16 @@ MIT Licensed
 	outline: none;
 	padding: 0.75em 2em;
 	text-align: center;
-	transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	        transform: translateY(-100%);
+	-webkit-transition: 0.15s ease-out 150ms;
 	transition: 0.15s ease-out 150ms;
 	width: 33%;
 }
 .is-active .super-search__input {
 	border-bottom: 2px solid #fff;
-	transform: translateY(0vh);
+	-webkit-transform: translateY(0vh);
+	        transform: translateY(0vh);
 }
 .super-search__results {
 	list-style: none;
@@ -66,13 +70,16 @@ MIT Licensed
 	overflow: visible;
 	padding: 1em;
 	text-align: left;
-	transform: translateY(1vh);
+	-webkit-transform: translateY(1vh);
+	        transform: translateY(1vh);
+	-webkit-transition: 0.2s ease;
 	transition: 0.2s ease;
 	width: 100%;
 }
 .super-search__results.is-hidden {
 	opacity: 0;
-	transform: translateY(-1vh);
+	-webkit-transform: translateY(-1vh);
+	        transform: translateY(-1vh);
 }
 
 .super-search__results > li {

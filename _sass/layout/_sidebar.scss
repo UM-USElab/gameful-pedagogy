@@ -1,4 +1,7 @@
 .sidebar-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   max-width: none;
