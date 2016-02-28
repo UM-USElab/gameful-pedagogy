@@ -2,8 +2,7 @@
 title: Gameful Pedagogy
 email: help@gradecraft.com
 description: "A website of resources to help instructors get started with gameful curriculum."
-url: "http://localhost:4000"
-baseurl: "/gameful-pedagogy"
+url: "http://pedagogy.hoopr.io"
 twitter_username: gradecraft
 github_username:  UM-USElab/GradeCraft
 collections:
