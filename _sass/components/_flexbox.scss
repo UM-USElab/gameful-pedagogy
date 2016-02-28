@@ -27,35 +27,35 @@
 
 .flex-col-25 {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 25% auto;
-      -ms-flex: 1 25% auto;
-          flex: 1 25% auto;
+  -webkit-flex: 1 25%;
+      -ms-flex: 1 25%;
+          flex: 1 25%;
 
   @include breakpoint($mq_small) {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 100% auto;
-        -ms-flex: 1 100% auto;
-            flex: 1 100% auto;
+    -webkit-flex: 1 100%;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
   }
 }
 
 .flex-col-50 {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 50% auto;
-      -ms-flex: 1 50% auto;
-          flex: 1 50% auto;
+  -webkit-flex: 1 50%;
+      -ms-flex: 1 50%;
+          flex: 1 50%;
 
   @include breakpoint($mq_small) {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 100% auto;
-        -ms-flex: 1 100% auto;
-            flex: 1 100% auto;
+    -webkit-flex: 1 100%;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
   }
 }
 
 .flex-col-75 {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 75% auto;
-      -ms-flex: 1 75% auto;
-          flex: 1 75% auto;
+  -webkit-flex: 1 75%;
+      -ms-flex: 1 75%;
+          flex: 1 75%;
 }
