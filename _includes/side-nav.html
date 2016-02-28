@@ -9,7 +9,7 @@
 
   <select>
     {% for side_nav_item in site[side-nav-slug] %}
-      <option value="{{ site.url }}{{ side_nav_item.url }}" {% if page.url == side_nav_item.url %}selected{% endif %} data-icon="/img/{{ side_nav_item.slug }}.png" class="left circle">{{ side_nav_item.title }}</option>
+      <option value="{{ side_nav_item.url }}" {% if page.url == side_nav_item.url %}selected{% endif %} data-icon="/img/{{ side_nav_item.slug }}.png" class="left circle">{{ side_nav_item.title }}</option>
     {% endfor %}
   </select>
 </nav>
