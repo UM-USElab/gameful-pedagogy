@@ -3,7 +3,6 @@
   width: 100px;
 
   @include breakpoint($mq_small) {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: .75em;
