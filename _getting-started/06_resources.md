@@ -3,7 +3,7 @@ layout: sidebar
 width_1200: true
 title: Resources
 slug: gameful-course-design
-description: Resourses for implementing gameful course design
+description: Resources for implementing gameful course design
 keyword:
 ---
 
