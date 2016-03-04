@@ -14,3 +14,41 @@ select {
   height: 40px;
   border: 0px;
 }
+
+.custom-counter {
+  list-style-type: none;
+  margin-left: 0;
+  padding-right: 0;
+}
+
+.custom-counter ol {
+  display: block;
+  list-style-type: decimal;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+
+.custom-counter li {
+  counter-increment: step-counter;
+  margin: 2em 0;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.custom-counter li::before {
+  content: counter(step-counter);
+  display: block;
+  position: absolute;
+  height: 36px;
+  border-radius: 50%;
+  left: 270px;
+  width: 36px;
+  text-align: center;
+  line-height: 36px;
+  color: white;
+  background-color: #feb130;
+  font-weight: bold;
+}
