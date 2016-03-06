@@ -1,0 +1,49 @@
+.inline-img {
+  width: 260px;
+  margin: 1em;
+}
+
+.right {
+  float: right;
+  margin-left: 1.5em;
+}
+
+.left {
+  float: left;
+  margin-right: 1.5em;
+}
+
+.choice {
+  width: 400px;
+}
+
+.medium {
+  width: 300px;
+  margin-top: .5em;
+}
+
+.large {
+  width: 350px;
+}
+
+.content-what-is-gameful h2 {
+  margin-top: 1.5em;
+}
+
+blockquote p {
+  color: $color-blue-3;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.6;
+  text-align: center;
+  background-image: url('../img/blockquote.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+blockquote {
+  margin: 0 auto;
+  width: 400px;
+}

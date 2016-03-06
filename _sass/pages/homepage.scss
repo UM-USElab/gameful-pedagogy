@@ -17,12 +17,24 @@
 }
 
 .what-is-gameful-panel {
-  background-color: #0a4a81;
+  background-color: darken(#0a4a81, 5%);
+  height: 200px;
+  background-image: url('../img/books2-graphic.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .faqs-panel {
   background-color: $color-blue-3;
   background-image: url('../img/FAQs.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.example-syllabi-panel {
+  background-color: #feb130;
+  background-image: url('../img/example-syllabi.png');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -47,12 +59,14 @@
   }
 
   p {
+    font-size: .9em;
+    font-weight: 200;
     margin-top: 0;
   }
 
   img {
     bottom: 0;
-    left: 50%;
+    left: 15%;
     position: absolute;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -72,20 +86,16 @@
 
 .getting-started-panel {
   background-color: $color-green-2;
-
-  img {
-    left: 60%;
-    -webkit-transform: none;
-            transform: none;
-    width: 175px;
-  }
+  background-image: url('../img/getting-started.png');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .panel-text {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
-  padding: 0 4em;
+  padding: 0 1em;
   text-align: center;
   width: 100%;
 
