@@ -31,14 +31,14 @@ select {
   -webkit-padding-start: 40px;
 }
 
-.custom-counter li {
+.custom-counter > li {
   counter-increment: step-counter;
   margin: 2em 0;
   display: list-item;
   text-align: -webkit-match-parent;
 }
 
-.custom-counter li::before {
+.custom-counter > li::before {
   content: counter(step-counter);
   display: block;
   position: absolute;
@@ -48,7 +48,7 @@ select {
   width: 36px;
   text-align: center;
   line-height: 36px;
-  color: white;
-  background-color: #feb130;
+  color: $color-grey-5;
+  border: 1px solid $color-grey-5;
   font-weight: bold;
 }

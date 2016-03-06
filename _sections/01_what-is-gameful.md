@@ -32,7 +32,7 @@ A core principle in videogames is the freedom to fail: you can experiment, take 
   -  Allow students to re-submit an assignment if it is below particular threshold (thereby limiting the amount of re-grading necessary)
   -  Structure multiple ‘pathways’ of assessments so that failure in one area does not limit a student’s course success. For instance, if a student does poorly on an essay, they can make up for it by writing multiple scholarly blog posts.
 
-> This is a block-quote. Testing, testing, testing. Blah blah blah blah blah blah blah blah
+> "I learned the most from assignments where I first failed but was given the chance to resubmit."
 
 ## Transparency
 In order for students to have the autonomy to decide what assignments they will work on and plan their schedule for the semester it’s essential to be transparent about the opportunities they will have during the semester.We encourage instructors to have all of their assignments designed and ready to go right from the beginning, complete with rubrics and/or grading schemes, and how completing different assignments at different thresholds maps to different outcomes in the course. If you don’t tell students what point thresholds and/or achievements equate to each grade, they can’t make informed choices about what work they’ll take on.
