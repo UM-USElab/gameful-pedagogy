@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: How do I decide how many points an assignment should be worth?
 category: Assignment Design
 slug: how-do-i-decide-how-many-points

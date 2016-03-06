@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: How do I think about distributing assignments across the semester?
 category: Assignment Design
 slug: how-do-i-think-about-distributing-assignments

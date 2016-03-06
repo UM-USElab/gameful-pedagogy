@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: What should I badge?
 category: Badging
 slug: what-should-i-badge

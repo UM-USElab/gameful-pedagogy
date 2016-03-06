@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: How much choice is too much choice?
 category: Assignment Design
 slug: how-much-choice-is-too-much

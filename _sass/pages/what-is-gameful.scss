@@ -1,6 +1,6 @@
 .inline-img {
-  width: 260px;
   margin: 1em;
+  width: 260px;
 }
 
 .right {
@@ -18,8 +18,8 @@
 }
 
 .medium {
-  width: 300px;
   margin-top: .5em;
+  width: 300px;
 }
 
 .large {
@@ -30,20 +30,20 @@
   margin-top: 1.5em;
 }
 
-blockquote p {
-  color: $color-blue-3;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 1.6;
-  text-align: center;
-  background-image: url('../img/blockquote.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 blockquote {
   margin: 0 auto;
-  width: 400px;
+  width: 50%;
+
+  p {
+    background-image: url('../img/blockquote.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: $color-blue-3;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+    }
 }

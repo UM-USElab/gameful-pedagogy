@@ -1,0 +1,18 @@
+table {
+  border-collapse: collapse;
+  width: 30%;
+}
+
+th,
+td {
+  border: 1px solid $color-grey-5;
+  font-size: .75em;
+  padding: .2rem;
+  text-align: left;
+}
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: table;
+}

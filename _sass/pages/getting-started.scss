@@ -3,16 +3,15 @@
   @include breakpoint($mq_small) {
     display: block;
   }
-}
-
-.gs-menu ul {
-  display: none;
+  ul {
+    display: none;
+  }
 }
 
 select {
-  width: 100%;
+  border: 0;
   height: 40px;
-  border: 0px;
+  width: 100%;
 }
 
 .custom-counter {
@@ -26,8 +25,8 @@ select {
   list-style-type: decimal;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
   -webkit-padding-start: 40px;
 }
 

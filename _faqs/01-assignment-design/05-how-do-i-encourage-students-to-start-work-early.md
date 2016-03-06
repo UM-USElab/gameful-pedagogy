@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: How do I encourage students to start work early?
 category: Assignment Design
 slug: how-do-i-encourage-students-to-start-work-early

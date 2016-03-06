@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: Should badges award points?
 category: Badging
 slug: should-badges-award-points
