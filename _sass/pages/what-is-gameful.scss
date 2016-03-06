@@ -1,7 +1,6 @@
 .inline-img {
   width: 260px;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin: 1em;
 }
 
 .right {
@@ -21,4 +20,30 @@
 .medium {
   width: 300px;
   margin-top: .5em;
+}
+
+.large {
+  width: 350px;
+}
+
+.content-what-is-gameful h2 {
+  margin-top: 1.5em;
+}
+
+blockquote p {
+  color: #feb130;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.6;
+  text-align: center;
+  background-image: url('../img/blockquote.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+blockquote {
+  margin: 0 auto;
+  width: 400px;
 }
