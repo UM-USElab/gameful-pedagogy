@@ -52,3 +52,20 @@ select {
   border: 1px solid $color-grey-5;
   font-weight: bold;
 }
+
+table {
+  border-collapse: collapse;
+  width: 30%;
+}
+th, td {
+  padding: 0.2rem;
+  text-align: left;
+  border: 1px solid #ccc;
+  font-size: .75em;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
