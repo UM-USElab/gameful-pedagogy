@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: Can I require all students to do certain assignments?
 category: Assignment Design
 slug: can-I-require-all-students-to-do-certain-assignments

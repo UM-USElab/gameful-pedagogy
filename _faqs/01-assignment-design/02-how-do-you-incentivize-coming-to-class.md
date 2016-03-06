@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: How do you incentivize coming to class without making it so students can pass the class only by attending class?
 category: Assignment Design
 slug: how-do-you-incentivize-coming-to-class

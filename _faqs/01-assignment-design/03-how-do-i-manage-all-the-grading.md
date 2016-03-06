@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: How do I manage all of the grading that comes with assignment choice?
 category: Assignment Design
 slug: how-do-i-manage-all-the-grading

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: How do you handle the student who does so much B-level work that they are able to earn an A (the Brute Force A)? Is that a “bad” thing?
 category: Course Outcomes
 slug: the-brute-force-a
