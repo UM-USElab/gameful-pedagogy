@@ -19,6 +19,10 @@
 .what-is-gameful-panel {
   background-color: darken(#0a4a81, 5%);
   height: 200px;
+  background-image: url('../img/books2-graphic.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .faqs-panel {
@@ -82,7 +86,7 @@
 
 .getting-started-panel {
   background-color: $color-green-2;
-  background-image: url('../img/Gears.png');
+  background-image: url('../img/getting-started.png');
   background-position: center;
   background-repeat: no-repeat;
 }
