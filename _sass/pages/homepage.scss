@@ -7,12 +7,47 @@
 }
 
 .homepage-panel {
-  height: 700px;
   margin-top: 2em;
 
   @include breakpoint($mq_small) {
     height: auto;
     margin-top: 1em;
+  }
+}
+
+.panel-wrapper {
+  padding: .25em;
+}
+
+.panel {
+  color: $white;
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+
+  h2 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: .9em;
+    font-weight: 200;
+    margin-top: 0;
+  }
+}
+
+.panel-text {
+  padding: 0 1em;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include breakpoint($mq_medium) {
+    padding: 0 2em;
   }
 }
 
@@ -22,7 +57,7 @@
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 200px;
+  height: 400px;
 }
 
 .faqs-panel {
@@ -39,57 +74,9 @@
   background-repeat: no-repeat;
 }
 
-.panel {
-  color: $white;
-  overflow: hidden;
-  position: relative;
-
-  h2 {
-    margin: 0;
-    text-transform: uppercase;
-  }
-
-  p {
-    font-size: .9em;
-    font-weight: 200;
-    margin-top: 0;
-  }
-
-  img {
-    bottom: 0;
-    left: 15%;
-    position: absolute;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-
-    @include breakpoint($mq_small) {
-      height: auto;
-      left: 20%;
-      width: 50%;
-}
-
-    @include breakpoint($mq_extrasmall) {
-      height: auto;
-      left: 20%;
-      width: 60%;
-    }
-  }
-}
-
 .getting-started-panel {
   background-color: $color-green-2;
   background-image: url('../img/getting-started.png');
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.panel-text {
-  padding: 0 1em;
-  text-align: center;
-  width: 100%;
-
-  @include breakpoint($mq_medium) {
-    margin: 4em 0;
-    padding: 0 2em;
-  }
 }
