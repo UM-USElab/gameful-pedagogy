@@ -93,7 +93,7 @@ MIT Licensed
 		if (matchingPosts.length && currentResultHash !== lastSearchResultHash) {
 			searchResultsEl.classList.remove('is-hidden');
 			searchResultsEl.innerHTML = matchingPosts.map(function (post) {
-				return '<li><a href="' + post.link + '">' + post.title + '</a></li>';
+				return '<li class="grid-25 tablet-grid-33 mobile-grid-100"><a href="' + post.link + '">' + post.title + '</a></li>';
 			}).join('');
 		}
 		lastSearchResultHash = currentResultHash;
@@ -111,7 +111,7 @@ MIT Licensed
 			if (xmlhttp.readyState != 4) return;
 			if (xmlhttp.status != 200 && xmlhttp.status != 304) { return; }
 			var node = (new DOMParser).parseFromString(xmlhttp.responseText, 'text/xml');
-			node = node.children[0];
+			node = node.childNodes[0];
 			posts = getPostsFromXml(node);
 		}
 		xmlhttp.send();
@@ -121,6 +121,15 @@ MIT Licensed
 			e.preventDefault();
 			toggleSearch();
 		})
+
+		// Close search on ESC press
+		window.addEventListener('keyup', function onKeyPress(e) {
+			if (e.which === 27) {
+				searchEl.classList.remove('is-active');
+				searchResultsEl.classList.add('is-hidden');
+				htmlEl.classList.remove('noscroll');
+			}
+		});
 
 		searchInputEl.addEventListener('input', function onInputChange() {
 			handleInput();
