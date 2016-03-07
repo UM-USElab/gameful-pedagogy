@@ -1,11 +1,12 @@
-.logo img {
-  margin-top: .7em;
-  width: 100px;
+.logo {
+  float: left;
+    img {
+      margin-top: .7em;
+      width: 100px;
 
   @include breakpoint($mq_small) {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: .75em;
+    margin-top: .5em;
+    }
   }
 }
 

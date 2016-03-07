@@ -1,29 +1,48 @@
+/* General inline image styling */
+
 .inline-img {
-  margin: 1em;
-  width: 260px;
+  padding: 1em;
+  max-width: 100%;
+
+  @include breakpoint($mq_small) {
+    display: block;
+    margin-bottom: .75em;
+    padding: .5em;
+    text-align: center;
+    width: 100%;
+  }
 }
 
+/* Floats for inline images */
 .right {
   float: right;
-  margin-left: 1.5em;
+  margin-left: 1em;
+  @include breakpoint($mq_small) {
+    float: none;
+    margin: 0 auto 1em auto;
+  }
 }
 
 .left {
   float: left;
-  margin-right: 1.5em;
+  margin-right: 1em;
+  @include breakpoint($mq_small) {
+    float: none;
+    margin: 0 auto 1em auto;
+  }
 }
 
-.choice {
-  width: 400px;
-}
-
+/* Sizes for inline images */
 .medium {
-  margin-top: .5em;
   width: 300px;
 }
 
 .large {
   width: 350px;
+}
+
+.xlarge {
+  width: 400px;
 }
 
 .content-what-is-gameful h2 {
@@ -33,6 +52,9 @@
 blockquote {
   margin: 0 auto;
   width: 50%;
+  @include breakpoint($mq_small) {
+    width: 100%;
+  }
 
   p {
     background-image: url('../img/blockquote.png');
