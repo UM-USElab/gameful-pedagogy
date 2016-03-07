@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: How do I make sure I’m not “giving away an A?”
 category: Course Outcomes
 slug: how-do-i-make-sure-i-am-not-giving-away-an-a

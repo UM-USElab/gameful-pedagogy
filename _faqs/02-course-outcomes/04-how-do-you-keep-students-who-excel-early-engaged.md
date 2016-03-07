@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: How do you keep students who excel early in the course (level up quickly) engaged over the course of the term?
 category: Course Outcomes
 slug: how-do-you-keep-students-who-excel-early-engaged

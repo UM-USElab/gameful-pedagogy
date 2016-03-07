@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: How do I think about designing a rubric that can be used to assess content knowledge demonstrated through multiple formats?
 category: Assignment Design
 slug: how-do-i-think-about-designing-a-rubric

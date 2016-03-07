@@ -1,12 +1,13 @@
 ---
-layout: default
-title: "Frequently Asked Questions"
+layout: sidebar
+title: "FAQs"
+slug: faqs
 ---
 
 {% assign faq_categories = site.faqs | group_by: "category" %}
 
-<section class="flex-row">
-  <section class="flex-col-50">
+<section class="grid-container">
+  <section class="grid-50">
     {% for faq_category in faq_categories %}
       {% if site.data.faqs.categories.col_1 contains faq_category.name %}
         {% assign faq_items = faq_category.items %}
@@ -20,7 +21,7 @@ title: "Frequently Asked Questions"
     {% endfor %}
   </section>
 
-  <section class="flex-col-50">
+  <section class="grid-50">
     {% for faq_category in faq_categories %}
       {% if site.data.faqs.categories.col_2 contains faq_category.name %}
         {% assign faq_items = faq_category.items %}

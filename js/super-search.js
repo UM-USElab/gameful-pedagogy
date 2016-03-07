@@ -116,13 +116,6 @@ MIT Licensed
 		}
 		xmlhttp.send();
 
-		// Toggle on ESC key
-		window.addEventListener('keyup', function onKeyPress(e) {
-			if (e.which === 27) {
-				toggleSearch();
-			}
-		});
-
 		// Toggle when search icon clicked
 		document.querySelector('.toggle-super-search').addEventListener('click', function toggleSuperSearchOnClick(e) {
 			e.preventDefault();

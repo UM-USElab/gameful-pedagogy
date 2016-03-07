@@ -15,6 +15,7 @@
 @import "vendor/breakpoint/breakpoint";
 @import "vendor/super-search/super-search";
 @import "vendor/gradecraft/mountains";
+@import "vendor/unsemantic/unsemantic";
 
 /* =========================================================================
    Base
@@ -29,7 +30,7 @@
 @import "components/flexbox";
 @import "components/logo";
 @import "components/button";
-@import "components/tile";
+@import "components/table";
 @import "components/breadcrumb";
 @import "components/chip";
 
@@ -48,3 +49,4 @@
 @import "pages/getting-started";
 @import "pages/faqs";
 @import "pages/homepage";
+@import "pages/what-is-gameful";

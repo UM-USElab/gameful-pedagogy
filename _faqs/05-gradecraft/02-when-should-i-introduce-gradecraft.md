@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: When should I introduce GradeCraft and how should I talk about it?
 category: GradeCraft
 slug: when-should-i-introduce-gradecraft

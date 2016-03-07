@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: How do I think about naming levels?
 category: Language Choices
 slug: how-do-i-think-about-naming-levels
