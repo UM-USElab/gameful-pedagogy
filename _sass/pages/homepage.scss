@@ -8,11 +8,6 @@
 
 .homepage-panel {
   margin-top: 2em;
-
-  @include breakpoint($mq_small) {
-    height: auto;
-    margin-top: 1em;
-  }
 }
 
 .panel-wrapper {
@@ -20,10 +15,12 @@
 }
 
 .panel {
+  background-position: center;
+  background-repeat: no-repeat;
   color: $white;
+  height: 300px;
   overflow: hidden;
   position: relative;
-  height: 300px;
 
   h2 {
     margin: 0;
@@ -47,7 +44,7 @@
   transform: translate(-50%, -50%);
 
   @include breakpoint($mq_medium) {
-    padding: 0 2em;
+    padding: 0 1em;
   }
 }
 
@@ -55,28 +52,25 @@
   background-color: darken(#0a4a81, 5%);
   background-image: url('../img/books2-graphic.png');
   background-position: bottom;
-  background-repeat: no-repeat;
   background-size: contain;
   height: 400px;
+
+  @include breakpoint($mq_small) {
+    height: 300px;
+  }
 }
 
 .faqs-panel {
   background-color: $color-blue-3;
   background-image: url('../img/FAQs.png');
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .example-syllabi-panel {
-  background-color: #feb130;
+  background-color: $color-orange-3;
   background-image: url('../img/example-syllabi.png');
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .getting-started-panel {
   background-color: $color-green-2;
   background-image: url('../img/getting-started.png');
-  background-position: center;
-  background-repeat: no-repeat;
 }
