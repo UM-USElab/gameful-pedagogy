@@ -51,7 +51,6 @@ select {
   width: 36px;
   text-align: center;
   line-height: 36px;
-  color: $color-grey-5;
-  border: 1px solid $color-grey-5;
-  font-weight: bold;
+  background-color: $color-grey-5;
+  color: $white;
 }
