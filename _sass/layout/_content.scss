@@ -11,6 +11,6 @@
   padding-top: 50px;
 
   @include breakpoint($mq_small) {
-    padding-top: 70px;
+    padding-top: 3em;
   }
 }

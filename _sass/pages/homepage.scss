@@ -8,6 +8,10 @@
 
 .homepage-panel {
   margin-top: 2em;
+
+  @include breakpoint($mq_small) {
+    margin-top: 1em;
+  }
 }
 
 .panel-wrapper {
@@ -28,9 +32,11 @@
   }
 
   p {
-    font-size: .9em;
     font-weight: 200;
-    margin-top: 0;
+    margin-top: .25em;
+    @include breakpoint($mq_medium) {
+      font-weight: 400;
+    }
   }
 }
 
