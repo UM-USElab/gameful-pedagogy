@@ -32,9 +32,13 @@ MIT Licensed
 	display: block;
 	font-size: 1.5em;
 	position: absolute;
-	right: 3.5em;
-	top: 0.75em;
+	right: 24px;
+	top: 12px;
 	z-index: 1;
+
+	@include breakpoint($mq_medium) {
+		right: 12px;
+	}
 
 	&::before {
 		display: block;
@@ -53,38 +57,48 @@ MIT Licensed
 	padding: 0.75em 2em;
 	text-align: center;
 	-webkit-transform: translateY(-100%);
-	        transform: translateY(-100%);
+	transform: translateY(-100%);
 	-webkit-transition: 0.15s ease-out 150ms;
 	transition: 0.15s ease-out 150ms;
-	width: 33%;
+	width: 98%;
+
+	&::-ms-clear {
+		display: none;
+	}
 }
+
 .is-active .super-search__input {
 	border-bottom: 2px solid #fff;
 	-webkit-transform: translateY(0vh);
-	        transform: translateY(0vh);
+	transform: translateY(0vh);
 }
+
 .super-search__results {
 	list-style: none;
 	margin: 0 auto;
 	max-width: 960px;
 	overflow: visible;
-	padding: 1em;
+	padding: 1em 0;
 	text-align: left;
 	-webkit-transform: translateY(1vh);
-	        transform: translateY(1vh);
-	-webkit-transition: 0.2s ease;
-	transition: 0.2s ease;
+	transform: translateY(1vh);
+	-webkit-transition: .2s ease;
+	transition: .2s ease;
 	width: 100%;
 }
+
 .super-search__results.is-hidden {
 	opacity: 0;
 	-webkit-transform: translateY(-1vh);
-	        transform: translateY(-1vh);
+	transform: translateY(-1vh);
 }
 
 .super-search__results > li {
 	padding: 0.5em;
-	width: 25%;
+
+	@include breakpoint($mq_small) {
+		padding: 0.5em 0;
+	}
 }
 
 .super-search__results > li > a {
@@ -93,8 +107,12 @@ MIT Licensed
 	display: block;
 	font-size: 0.9em;
 	height: 200px;
-	padding: 1em;
 	overflow-y: hidden;
+	padding: 1em;
+
+	@include breakpoint($mq_small) {
+		height: 75px;
+	}
 
 	&:hover {
 		background-color: #FFF;
