@@ -1,8 +1,8 @@
 /* General inline image styling */
 
 .inline-img {
-  padding: 1em;
   max-width: 100%;
+  padding: 1em;
 
   @include breakpoint($mq-small) {
     display: block;
@@ -17,18 +17,20 @@
 .right {
   float: right;
   margin-left: 1em;
+
   @include breakpoint($mq-small) {
     float: none;
-    margin: 0 auto 1em auto;
+    margin: 0 auto 1em;
   }
 }
 
 .left {
   float: left;
   margin-right: 1em;
+
   @include breakpoint($mq-small) {
     float: none;
-    margin: 0 auto 1em auto;
+    margin: 0 auto 1em;
   }
 }
 
@@ -52,6 +54,7 @@
 blockquote {
   margin: 0 auto;
   width: 50%;
+
   @include breakpoint($mq-small) {
     width: 100%;
   }

@@ -7,6 +7,7 @@
 table {
   border-collapse: collapse;
   margin: .5em;
+
   @include breakpoint($mq-small) {
     margin: .1em;
   }

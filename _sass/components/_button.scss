@@ -1,32 +1,31 @@
 .button {
   background-color: transparent;
-  font-weight: 200;
-  font-size: 0.9em;
   border-radius: 5px;
-  padding: 0.25em 0.65em;
   display: inline-block;
-}
-
-.white-button {
-  color: #FFF;
-  border: 1px solid #FFF;
-
-  &:hover {
-    background-color: transparentize(#FFF, 0.8);
-  }
+  font-size: .9em;
+  font-weight: 200;
+  padding: .25em .65em;
 
   @include breakpoint($mq-small) {
     font-size: .9em;
   }
 }
 
+.white-button {
+  border: 1px solid $white;
+  color: $white;
+
+  &:hover {
+    background-color: transparentize($white, .8);
+  }
+}
+
 .blue-button {
-  color: $color-blue-3;
   border: 1px solid $color-blue-3;
+  color: $color-blue-3;
   margin-top: 2em;
 
   &:hover {
-      background-color: transparentize($color-blue-3, 0.8);
-    }
-
+    background-color: transparentize($color-blue-3, .8);
+  }
 }

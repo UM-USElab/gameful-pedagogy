@@ -1,5 +1,6 @@
 .content-faqs .grid-50:first-of-type {
   padding-right: 2.5em;
+
   @include breakpoint($mq-small) {
     padding-right: 0;
   }
