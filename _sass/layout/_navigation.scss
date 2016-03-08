@@ -5,7 +5,7 @@
     margin-bottom: .7em;
     float: right;
 
-    @include breakpoint($mq_small) {
+    @include breakpoint($mq-small) {
       margin-bottom: .5em;
       margin-top: .5em;
     }

@@ -15,7 +15,7 @@
     background-color: transparentize(#FFF, 0.8);
   }
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     font-size: .9em;
   }
 }

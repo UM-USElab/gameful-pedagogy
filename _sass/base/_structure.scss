@@ -27,7 +27,7 @@ body {
   padding-bottom: 3em;
   width: 100%;
 
-  @include breakpoint($mq_medium) {
+  @include breakpoint($mq-medium) {
     padding-left: .75em;
     padding-right: .75em;
 

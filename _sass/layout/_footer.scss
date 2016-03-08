@@ -16,7 +16,7 @@
   padding: 1.25em;
   z-index: 99;
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -34,7 +34,7 @@
   p {
     color: #666;
     font-size: .75em;
-    @include breakpoint($mq_small) {
+    @include breakpoint($mq-small) {
       font-size: .6em;
     }
   }
@@ -56,7 +56,7 @@
   padding-bottom: 2.5em;
   padding-top: 2.5em;
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     padding: 0;
   }
 }
@@ -67,7 +67,7 @@
   width: 25px;
   }
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     -webkit-box-ordinal-group: 0;
     -webkit-order: -1;
         -ms-flex-order: -1;
@@ -76,7 +76,7 @@
 }
 
 .footer-links {
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     font-size: 1.25em;
     margin: 0;
 }

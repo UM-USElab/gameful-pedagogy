@@ -36,7 +36,7 @@ MIT Licensed
 	top: 12px;
 	z-index: 1;
 
-	@include breakpoint($mq_medium) {
+	@include breakpoint($mq-medium) {
 		right: 12px;
 	}
 
@@ -96,7 +96,7 @@ MIT Licensed
 .super-search__results > li {
 	padding: 0.5em;
 
-	@include breakpoint($mq_small) {
+	@include breakpoint($mq-small) {
 		padding: 0.5em 0;
 	}
 }
@@ -110,7 +110,7 @@ MIT Licensed
 	overflow-y: hidden;
 	padding: 1em;
 
-	@include breakpoint($mq_small) {
+	@include breakpoint($mq-small) {
 		height: 75px;
 	}
 

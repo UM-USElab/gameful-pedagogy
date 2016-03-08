@@ -31,7 +31,7 @@
       -ms-flex: 1 25%;
           flex: 1 25%;
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     -webkit-box-flex: 1;
     -webkit-flex: 1 100%;
         -ms-flex: 1 100%;
@@ -45,7 +45,7 @@
       -ms-flex: 1 33%;
           flex: 0 0 33%;
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     -webkit-box-flex: 1;
     -webkit-flex: 1 100%;
         -ms-flex: 1 100%;
@@ -59,7 +59,7 @@
       -ms-flex: 1 50%;
           flex: 1 50%;
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     -webkit-box-flex: 1;
     -webkit-flex: 1 100%;
         -ms-flex: 1 100%;

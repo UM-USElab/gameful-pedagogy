@@ -1,6 +1,6 @@
 .gs-menu {
   display: none;
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     display: block;
   }
   ul {
