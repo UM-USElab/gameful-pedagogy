@@ -2,8 +2,9 @@
   font-size: .75rem;
   list-style: none;
   padding-left: 0;
-  @include breakpoint($mq_small) {
-    font-size: 0.9em;
+
+  @include breakpoint($mq-small) {
+    font-size: .9em;
   }
 
   li {
@@ -11,16 +12,17 @@
     text-transform: uppercase;
 
     &:not(:nth-last-child(2)) {
-      @include breakpoint($mq_small) {
+      @include breakpoint($mq-small) {
         display: none;
       }
     }
 
     &:not(:last-of-type)::after {
-      content: "/";
+      content: '/';
       margin-left: .75em;
       margin-right: .75em;
-      @include breakpoint($mq_small) {
+
+      @include breakpoint($mq-small) {
         display: none;
       }
     }
@@ -29,7 +31,8 @@
       content: '<';
       display: none;
       margin-right: .75em;
-      @include breakpoint($mq_small) {
+
+      @include breakpoint($mq-small) {
         display: inline;
       }
     }
@@ -37,6 +40,7 @@
     a {
       color: $color-grey-2;
       display: inline;
+
       &:hover {
         color: transparentize($color-grey-2, .5);
       }

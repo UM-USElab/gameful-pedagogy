@@ -9,7 +9,7 @@
   width: 100%;
   z-index: 100;
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     padding: .2em .5em;
   }
 }

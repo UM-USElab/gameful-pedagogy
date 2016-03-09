@@ -1,5 +1,5 @@
 .table-wrapper {
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     padding: 0;
   }
 }
@@ -7,7 +7,8 @@
 table {
   border-collapse: collapse;
   margin: .5em;
-  @include breakpoint($mq_small) {
+
+  @include breakpoint($mq-small) {
     margin: .1em;
   }
 }

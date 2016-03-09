@@ -1,16 +1,17 @@
 .logo {
   float: left;
-    img {
-      margin-top: .7em;
-      width: 100px;
 
-  @include breakpoint($mq_small) {
-    margin-top: .5em;
+  img {
+    margin-top: .7em;
+    width: 100px;
+
+    @include breakpoint($mq-small) {
+      margin-top: .5em;
     }
-  }
 }
 
-.logo a {
-  color: $color-blue-4;
-  font-size: 0.9em;
+  a {
+    color: $color-blue-4;
+    font-size: .9em;
+  }
 }

@@ -18,7 +18,7 @@ h3 {
 h1 {
   font-size: 2.25em;
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     font-size: 1.4em;
   }
 }
@@ -26,7 +26,7 @@ h1 {
 h2 {
   font-size: 1.875em;
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     font-size: 1.25em;
   }
 }
@@ -34,7 +34,7 @@ h2 {
 h3 {
   font-size: 1.5em;
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     font-size: 1em;
   }
 }
@@ -45,13 +45,13 @@ ol,
 li,
 a {
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     font-size: .9em;
   }
 }
 
 ul {
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     padding-left: 2em;
   }
 }

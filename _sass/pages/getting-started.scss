@@ -1,8 +1,10 @@
 .gs-menu {
   display: none;
-  @include breakpoint($mq_small) {
+
+  @include breakpoint($mq-small) {
     display: block;
-  }
+}
+
   ul {
     display: none;
   }
@@ -18,39 +20,43 @@ select {
   position: relative;
 }
 
+.gs-intro {
+  font-style: italic;
+}
+
 .custom-counter {
   list-style-type: none;
   margin-left: 0;
   padding-right: 0;
-}
 
-.custom-counter ol {
-  display: block;
-  list-style-type: decimal;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  -webkit-padding-start: 40px;
+  ol {
+    display: block;
+    list-style-type: decimal;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 40px;
+  }
 }
 
 .custom-counter > li {
   counter-increment: step-counter;
-  margin: 2em 0;
   display: list-item;
+  margin: 2em 0;
   text-align: -webkit-match-parent;
 }
 
 .custom-counter > li::before {
+  background-color: $color-grey-5;
+  border-radius: 50%;
+  color: $white;
   content: counter(step-counter);
   display: block;
-  position: absolute;
   height: 36px;
-  border-radius: 50%;
   left: -5px;
-  width: 36px;
-  text-align: center;
   line-height: 36px;
-  background-color: $color-grey-5;
-  color: $white;
+  position: absolute;
+  text-align: center;
+  width: 36px;
 }

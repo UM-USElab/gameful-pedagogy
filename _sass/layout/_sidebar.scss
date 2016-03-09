@@ -7,11 +7,11 @@
   max-width: none;
   padding-bottom: 0;
 
-  @include breakpoint($mq_medium) {
+  @include breakpoint($mq-medium) {
     padding: 0;
   }
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     display: block;
     padding-left: .75em;
     padding-right: .75em;
@@ -21,7 +21,7 @@
     background-color: $color-blue-3;
     min-width: 250px;
 
-    @include breakpoint($mq_small) {
+    @include breakpoint($mq-small) {
       background-color: $white;
       width: 100%;
     }
@@ -29,24 +29,24 @@
     .breadcrumbs {
       display: none;
 
-      @include breakpoint($mq_small) {
+      @include breakpoint($mq-small) {
         display: block;
       }
     }
   }
 
   h1 {
-    @include breakpoint($mq_small) {
+    @include breakpoint($mq-small) {
       display: none;
     }
   }
 }
 
 .side-nav {
-  padding-top: 2.5em;
   padding-left: 1.5em;
+  padding-top: 2.5em;
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     padding: 0;
   }
 
@@ -62,7 +62,7 @@
 }
 
 .side-nav-menu {
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     display: none;
   }
 }
@@ -82,7 +82,7 @@
   display: none;
   margin: 1em 0 .25em;
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     display: block;
   }
 
@@ -114,14 +114,14 @@
   max-width: 960px;
   padding: 0 1.5em 3em;
 
-  @include breakpoint($mq_small) {
+  @include breakpoint($mq-small) {
     max-width: none;
     padding-left: 0;
     padding-right: 0;
   }
 
   .breadcrumbs {
-    @include breakpoint($mq_small) {
+    @include breakpoint($mq-small) {
       display: none;
     }
   }
