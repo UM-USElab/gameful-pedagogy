@@ -13,7 +13,7 @@
 
     {% include header.html %}
 
-    <article class="content content-{{ page.url | slugify }}">
+    <article class="content content-{{ page.url | slugify }} {% if page.collection == 'faqs' %}subpage-content{% endif %}">
       <div class="wrapper {{ page.layout }}-wrapper">
         {% if page.layout != 'sidebar' %}
           {% include breadcrumb.html %}
