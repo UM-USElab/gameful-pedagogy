@@ -16,7 +16,7 @@ Games — real and metaphorical, formal and informal — are everywhere where hu
 
 <a href="/docs/HON240_Syllabus.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Honors 240: The Games We Play</a>
 
-##Honors 242: Deep Time: The Science of Origins
+## Honors 242: Deep Time: The Science of Origins
 
 In this Honors Core course, we explore the intellectual history of the science of origins, beginning in the 17th century, when science had little to say about the origin of anything, and ending on the last day of class, with discoveries made while the course was taking place. Working together, we investigate not only what science has learned about origins, but how these things were discovered, who contributed, and why progress was made where and when it was. In short, we explore the origins of origin science. Along they way, you will learn a lot about how science really works. To learn these things, we will read original scientific works from the 17th through the 21st century, contemporary reviews, historical accounts, and philosophical papers on epistemology. This course is highly interdisciplinary, exploring the origins of the Earth, life, and the universe using approaches drawn from geoscience, biology, physics, chemistry, and statistics.
 
@@ -29,7 +29,7 @@ This course examines the ways language serves as a potential site of social stat
 
 <a href="/docs/LING370_Syllabus.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Linguistics 370: Language and Discrimination</a>
 
-##Education 222: Videogames and Learning
+## Education 222: Videogames and Learning
 
 Why are videogames fun? The answer isn't as obvious as you might think. Good games draw you in, teach you how to succeed, and keep you engaged with a "just right" level of challenge. Most importantly, players *learn* while playing a well-designed game. Why isn't school like that? This class takes a hard look at videogames, a hard look at education, and considers ways that each can be improved to maximize learning.
 
