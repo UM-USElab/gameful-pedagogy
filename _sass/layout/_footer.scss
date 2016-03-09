@@ -32,7 +32,7 @@
   }
 
   p {
-    color: $color-grey-2;
+    color: #666;
     font-size: .75em;
 
     @include breakpoint($mq-small) {
