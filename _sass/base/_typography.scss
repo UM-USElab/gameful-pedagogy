@@ -42,7 +42,6 @@ h3 {
 p,
 ul,
 ol,
-li,
 a {
 
   @include breakpoint($mq-small) {
@@ -52,7 +51,7 @@ a {
 
 ul {
   @include breakpoint($mq-small) {
-    padding-left: 2em;
+    padding-left: 1.25em;
   }
 }
 
