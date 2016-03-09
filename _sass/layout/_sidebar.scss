@@ -39,6 +39,11 @@
     @include breakpoint($mq-small) {
       display: none;
     }
+   .subpage-content & {
+      @include breakpoint($mq-small) {
+        display: block;
+      }
+    }
   }
 }
 
@@ -86,6 +91,12 @@
     display: block;
   }
 
+  .subpage-content & {
+    @include breakpoint($mq-small) {
+      display: none;
+    }
+  }
+
   span.caret {
     top: 18px;
   }
@@ -105,6 +116,12 @@
       float: left;
     }
   }
+}
+
+select {
+  border: 0;
+  height: 40px;
+  width: 100%;
 }
 
 .sidebar-right {
