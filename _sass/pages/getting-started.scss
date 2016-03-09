@@ -29,6 +29,9 @@ select {
   margin-left: 0;
   padding-right: 0;
 
+  @include breakpoint($mq-small) {
+    padding-left: 24px;
+  }
   ol {
     display: block;
     list-style-type: decimal;
@@ -59,4 +62,10 @@ select {
   position: absolute;
   text-align: center;
   width: 36px;
+
+  @include breakpoint($mq-small) {
+    height: 24px;
+    line-height: 24px;
+    width: 24px;
+  }
 }
