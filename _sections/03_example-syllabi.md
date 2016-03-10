@@ -33,4 +33,4 @@ This course examines the ways language serves as a potential site of social stat
 
 Why are videogames fun? The answer isn't as obvious as you might think. Good games draw you in, teach you how to succeed, and keep you engaged with a "just right" level of challenge. Most importantly, players *learn* while playing a well-designed game. Why isn't school like that? This class takes a hard look at videogames, a hard look at education, and considers ways that each can be improved to maximize learning.
 
-<a href="/docs/EDUC333_Syllabus.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Education 222: Videogames and Learning</a>
+<a href="/docs/EDUC333_Syllabus.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Education 333: Videogames and Learning</a>
