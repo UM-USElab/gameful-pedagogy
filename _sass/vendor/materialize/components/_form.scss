@@ -8,6 +8,47 @@ label {
   color: $input-border-color;
 }
 
+/***************************
+   Text Inputs + Textarea
+****************************/
+
+// Style Placeholders
+::-webkit-input-placeholder {
+   color: lighten($input-border-color, 20%);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: lighten($input-border-color, 20%);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: lighten($input-border-color, 20%);
+}
+
+:-ms-input-placeholder {
+   color: lighten($input-border-color, 20%);
+}
+
+// Text inputs
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+
+  // General Styles
+  border-bottom: 1px solid $input-border-color;
+  border-radius: 0;
+  outline: none;
+}
+
 /***************
   Select Field
 ***************/
