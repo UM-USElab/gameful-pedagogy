@@ -70,7 +70,7 @@ MIT Licensed
 	function handleInput() {
 		var currentResultHash, d;
 
-		currentInputValue = searchInputEl.value;
+		currentInputValue = searchInputEl.value.toLowerCase();
 		if (!currentInputValue || currentInputValue.length < 3) {
 			lastSearchResultHash = '';
 			searchResultsEl.classList.add('is-hidden');
