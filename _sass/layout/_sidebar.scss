@@ -39,7 +39,8 @@
     @include breakpoint($mq-small) {
       display: none;
     }
-   .subpage-content & {
+
+    .subpage-content & {
       @include breakpoint($mq-small) {
         display: block;
       }
