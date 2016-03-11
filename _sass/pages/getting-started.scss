@@ -6,7 +6,8 @@
   font-style: italic;
 }
 
-.custom-counter {
+.custom-counter,
+.lettered-list {
   list-style-type: none;
   margin-left: 0;
   padding-right: 0;
@@ -14,40 +15,67 @@
   @include breakpoint($mq-small) {
     padding-left: 24px;
   }
-  ol {
-    display: block;
-    list-style-type: decimal;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    -webkit-padding-start: 40px;
+
+  > li {
+    display: list-item;
+    margin: 2em 0;
+    text-align: -webkit-match-parent;
+
+    &::before {
+      background-color: $color-grey-5;
+      border-radius: 50%;
+      color: $white;
+      display: block;
+      height: 36px;
+      left: -5px;
+      line-height: 36px;
+      position: absolute;
+      text-align: center;
+      width: 36px;
+
+      @include breakpoint($mq-small) {
+        height: 24px;
+        line-height: 24px;
+        width: 24px;
+      }
+    }
   }
 }
 
-.custom-counter > li {
-  counter-increment: step-counter;
-  display: list-item;
-  margin: 2em 0;
-  text-align: -webkit-match-parent;
+.custom-counter {
+  counter-reset: section;
+
+  > li::before {
+    content: counter(section);
+    counter-increment: section;
+  }
 }
 
-.custom-counter > li::before {
-  background-color: $color-grey-5;
-  border-radius: 50%;
-  color: $white;
-  content: counter(step-counter);
-  display: block;
-  height: 36px;
-  left: -5px;
-  line-height: 36px;
-  position: absolute;
-  text-align: center;
-  width: 36px;
+.lettered-list {
+  counter-reset: subsection;
 
-  @include breakpoint($mq-small) {
-    height: 24px;
-    line-height: 24px;
-    width: 24px;
+  > li {
+    margin: 1.5em 0;
+
+    &::before {
+      background-color: #B8E986;
+      content: counter(subsection, upper-alpha);
+      counter-increment: subsection;
+      height: 32px;
+      left: 40px;
+      line-height: 32px;
+      width: 32px;
+
+      @include breakpoint($mq-small) {
+        height: 24px;
+        left: 20px;
+        line-height: 24px;
+        width: 24px;
+      }
+    }
   }
+}
+
+.leveling-system {
+  margin-top: 1em;
 }
