@@ -1,6 +1,6 @@
 ---
 layout: sidebar
-title: "What is Gameful"
+title: "What is Gameful?"
 slug: what-is-gameful
 ---
 Gameful learning is a pedagogical approach that takes inspiration from how good games function, and applies that to the design of learning environments. Gameful design operates in a self-deterministic framework–we want to apply what self-determination theory says about how intrinsic motivation works to build motivating classroom experiences.
