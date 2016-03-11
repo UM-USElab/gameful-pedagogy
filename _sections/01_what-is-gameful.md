@@ -5,7 +5,7 @@ slug: what-is-gameful
 ---
 Gameful learning is a pedagogical approach that takes inspiration from how good games function, and applies that to the design of learning environments. Gameful design operates in a self-deterministic framework–we want to apply what self-determination theory says about how intrinsic motivation works to build motivating classroom experiences.
 
-<img class="inline-img medium left" src="../img/sdt.png" alt="Self-determination Theory"> Self-determination theory says that in order to feel intrinsically motivated, people need to be able to make meaningful choices over what they are doing (autonomy), be challenged by a task but feel like they can succeed (competency), and feel connected to those around them (belongingness). How do we establish support for these feelings? And which elements from games do we use to do so? We start with an perspective switch: we switch from a percentage system where students begin with 100% and lose as they complete assessments, to one where they start with zero points and earn up as they complete experiences and show content mastery.
+<img class="inline-img medium left" src="../img/sdt.png" alt="Self-determination Theory"> Self-determination theory (Ryan & Deci, 2000) says that in order to feel intrinsically motivated, people need to be able to make meaningful choices over what they are doing (autonomy), be challenged by a task but feel like they can succeed (competency), and feel connected to those around them (belongingness). How do we establish support for these feelings? And which elements from games do we use to do so? We start with an perspective switch: we switch from a percentage system where students begin with 100% and lose as they complete assessments, to one where they start with zero points and earn up as they complete experiences and show content mastery.
 
 
 ## Choice
@@ -32,10 +32,13 @@ A core principle in videogames is the freedom to fail: you can experiment, take 
   -  Allow students to re-submit an assignment if it is below particular threshold (thereby limiting the amount of re-grading necessary)
   -  Structure multiple ‘pathways’ of assessments so that failure in one area does not limit a student’s course success. For instance, if a student does poorly on an essay, they can make up for it by writing multiple scholarly blog posts.
 
-> "I learned the most from assignments where I first failed but was given the chance to resubmit."
+> “I really enjoyed the flexibility and non-competitive nature that the grading system provided. As a student, I can say that I did a lot of work, found myself more likely to enjoy the work, and felt in control of my progression in the class.”
 
 ## Transparency
 In order for students to have the autonomy to decide what assignments they will work on and plan their schedule for the semester it’s essential to be transparent about the opportunities they will have during the semester.We encourage instructors to have all of their assignments designed and ready to go right from the beginning, complete with rubrics and/or grading schemes, and how completing different assignments at different thresholds maps to different outcomes in the course. If you don’t tell students what point thresholds and/or achievements equate to each grade, they can’t make informed choices about what work they’ll take on.
 
 
 <img class="inline-img right large" src="../img/student-analytics.png" alt="analytics">We also set the expectation that, as part of being transparent, you will not use a grading curve. Whatever points a student earns maps directly to the grade they’ll get; if they earn enough points to have achieved an A three quarters of the way through the class, then they’ve earned an A at the end of the semester. We encourage you to share data with students directly regarding their progress as compared to their peers in order to help them reflect on both their effort and progress, and to encourage them to reach out for support if they’re falling behind. We have consistently seen if if you set a high bar with transparent components, students are motivated to succeed and will do high-quality work to do so.
+
+## References
+- Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. American Psychologist, 55, 68–78. Retrieved from http://doi.org/10.1037/0003-066X.55.1.68
