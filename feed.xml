@@ -22,7 +22,6 @@
         {% if section.keywords %}
           <keywords>{{ section.keywords | script_html | xml_escape }}</keywords>
         {% endif %}
-        <pubDate>{{ section.date | date_to_rfc822 }}</pubDate>
         <link>{{ site.url }}{{ section.url }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ section.url }}</guid>
       </item>
@@ -42,7 +41,6 @@
         {% if faq.keywords %}
           <keywords>{{ faq.keywords | script_html | xml_escape }}</keywords>
         {% endif %}
-        <pubDate>{{ faq.date | date_to_rfc822 }}</pubDate>
         <link>{{ site.url }}{{ faq.url }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ faq.url }}</guid>
       </item>
